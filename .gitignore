@@ -1,0 +1,71 @@
+# Movian Watch History - Git Ignore File
+
+# Logs and debug
+*.log
+logs/
+debug/
+.DS_Store
+
+# Node.js (if any build tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+cache/
+
+# Build artifacts
+build/
+dist/
+*.tgz
+*.tar.gz
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Test outputs
+test-results/
+*.test.js
+
+# Movian specific
+.cache/
+kvstore/
+*.pid
+
+# Documentation build
+docs/_build/
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Local development
+local/
+dev/
+
+# Movian plugin specific
+.settings/
+watchhistory.*.db

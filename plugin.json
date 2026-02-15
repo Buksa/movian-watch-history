@@ -1,0 +1,14 @@
+{
+    "id": "watch-history",
+    "type": "ecmascript",
+    "apiversion": 2,
+    "showtimeVersion": "5",
+    "file": "watchhistory.js",
+    "version": "0.1.0",
+    "title": "Watch History",
+    "synopsis": "Global watch history, continue watching, and favorites for all plugins",
+    "description": "Tracks playback position across all plugins using VideoScrobbler. Provides continue watching, watch history, and favorites features.",
+    "author": "ReREZka Team",
+    "category": "video",
+    "icon": "icon.png"
+}
