@@ -17,9 +17,15 @@ function trackedJavaScript() {
     });
 }
 
-function checkFile(filename) {
-    var source = fs.readFileSync(filename, 'utf8');
+function stagedSource(filename) {
+    return childProcess.execFileSync(
+        'git',
+        ['show', ':' + filename],
+        { encoding: 'utf8' }
+    );
+}
 
+function checkFile(filename, source) {
     try {
         acorn.parse(source, {
             ecmaVersion: 5,
@@ -40,22 +46,30 @@ function checkFile(filename) {
 
 function main() {
     var filenames = process.argv.slice(2);
+    var staged = filenames.length === 0;
     var failures = 0;
     var index;
+    var source;
 
-    if (filenames.length === 0) {
+    if (staged) {
         filenames = trackedJavaScript();
     }
 
     for (index = 0; index < filenames.length; index += 1) {
-        failures += checkFile(filenames[index]);
+        source = staged ?
+            stagedSource(filenames[index]) :
+            fs.readFileSync(filenames[index], 'utf8');
+        failures += checkFile(filenames[index], source);
     }
 
     if (failures !== 0) {
         return 1;
     }
 
-    console.log('Tracked JavaScript parses as ECMAScript 5');
+    console.log(
+        (staged ? 'Staged' : 'Selected') +
+        ' JavaScript parses as ECMAScript 5'
+    );
     return 0;
 }
 

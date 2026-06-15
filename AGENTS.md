@@ -13,11 +13,14 @@ The plugin runs on Movian's **Duktape engine**, which is strictly **ECMAScript 5
 ## 🛠 Build, Lint, and Test Commands
 
 ### Syntax & Linting
-Always run the tracked ES5.1 compatibility check before committing:
+Stage the intended changes, then run the ES5.1 compatibility check:
 
 ```bash
 ./support/codex/check-es5.sh
 ```
+
+With no arguments the command validates JavaScript from the Git index. Pass
+explicit file paths to validate working-tree files during development.
 
 If optional local development helpers are installed, run
 `./dev/syntax-check.sh` as an additional check. Use the installed Movian plugin
