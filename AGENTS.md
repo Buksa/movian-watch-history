@@ -13,15 +13,15 @@ The plugin runs on Movian's **Duktape engine**, which is strictly **ECMAScript 5
 ## 🛠 Build, Lint, and Test Commands
 
 ### Syntax & Linting
-Always run a syntax check before committing. If the optional local development
-helpers are installed, use:
+Always run the tracked ES5.1 compatibility check before committing:
 
 ```bash
-./dev/syntax-check.sh
+./support/codex/check-es5.sh
 ```
 
-Otherwise run `node --check` for tracked JavaScript files and use the installed
-Movian plugin testing skill for runtime validation.
+If optional local development helpers are installed, run
+`./dev/syntax-check.sh` as an additional check. Use the installed Movian plugin
+testing skill for runtime validation.
 
 ### Running the Plugin
 Launch Movian in debug mode with the current directory as the plugin path:
