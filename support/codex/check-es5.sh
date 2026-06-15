@@ -5,4 +5,4 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "${ROOT}"
 
-exec python3 "${ROOT}/support/codex/check_es5.py" "$@"
+exec node "${ROOT}/support/codex/check-es5.js" "$@"
