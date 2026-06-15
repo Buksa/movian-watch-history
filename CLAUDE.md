@@ -14,7 +14,7 @@ Movian media player plugin that provides **global watch history tracking** acros
 
 ```bash
 # Run Movian with plugin loaded (debug mode)
-showtime -d -p /home/dietpi/workspace/movian-watch-history/
+showtime -d -p .
 
 # Test with a specific video file
 showtime -d -p . "file:///path/to/video.mp4"
