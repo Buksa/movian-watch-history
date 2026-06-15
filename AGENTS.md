@@ -116,8 +116,9 @@ After a Git state change or merge:
 ```
 
 The refresh command updates ignored project state and creates a local knowledge
-commit. It does not push either repository. Use `project-knowledge sync` only
-after an explicit request to push the project knowledge vault.
+commit. It does not push either repository. Use
+`project-knowledge backup sync` only after an explicit request to push the
+aggregate knowledge backup.
 
 ## 🏗 Architectural Patterns
 
