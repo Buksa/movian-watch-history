@@ -2,7 +2,7 @@
 
 **Дата создания:** 9 февраля 2026  
 **На основе:** Исходного кода Movian (C) и анализа архитектуры  
-**Автор:** Анализ ИИ на основе кода из `/home/dietpi/workspace/movian/src/`
+**Автор:** Анализ ИИ на основе публичного дерева исходников Movian
 
 ---
 
@@ -1589,13 +1589,13 @@ prop.global.navigators.current.source
 
 ### Полезные Ссылки
 
-- **Prop Core:** `/home/dietpi/workspace/movian/src/prop/prop_core.c`
-- **Prop HTTP:** `/home/dietpi/workspace/movian/src/prop/prop_http.c` ← HTTP API
-- **Navigator:** `/home/dietpi/workspace/movian/src/navigator.c`
-- **Media:** `/home/dietpi/workspace/movian/src/media/media.c`
-- **JS Bindings:** `/home/dietpi/workspace/movian/src/ecmascript/es_prop.c`
-- **Public API:** `/home/dietpi/workspace/movian/src/prop/prop.h`
-- **Internal API:** `/home/dietpi/workspace/movian/src/prop/prop_i.h`
+- **Prop Core:** `src/prop/prop_core.c`
+- **Prop HTTP:** `src/prop/prop_http.c` ← HTTP API
+- **Navigator:** `src/navigator.c`
+- **Media:** `src/media/media.c`
+- **JS Bindings:** `src/ecmascript/es_prop.c`
+- **Public API:** `src/prop/prop.h`
+- **Internal API:** `src/prop/prop_i.h`
 
 ---
 

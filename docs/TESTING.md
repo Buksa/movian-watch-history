@@ -119,7 +119,7 @@ curl http://localhost:42000/api/prop/global/media/current/playstatus
 ```bash
 # Local file with debug
 showtime -d -p /path/to/watch-history \
-  "file:///home/user/video.mp4" 2>&1 | grep -E "(PLAYBACK START|Title from|history.*title=)"
+  "file:///path/to/video.mp4" 2>&1 | grep -E "(PLAYBACK START|Title from|history.*title=)"
 
 # UPNP with debug
 showtime -d -p /path/to/watch-history \
@@ -166,13 +166,7 @@ showtime -d -p /path/to/watch-history \
 
 ## Advanced Testing
 
-For advanced automated testing with WebSocket STPP protocol, see the **Movian Agent Intelligence (MAI)** toolkit:
-
-```
-/home/dietpi/workspace/movian-agent-intelligence/
-```
-
-MAI provides:
+Use an installed Movian testing toolkit for:
 - WebSocket STPP client for real-time prop monitoring
 - Automated test runners
 - Mock VFS providers
