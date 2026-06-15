@@ -7,4 +7,3 @@ repository = "Buksa/movian-watch-history"
 default_branch = "master"
 shared_knowledge = ["movian-public"]
 source_paths = ["AGENTS.md", "README.md", "plugin.json", "docs"]
-

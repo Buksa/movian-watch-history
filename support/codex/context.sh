@@ -13,4 +13,3 @@ command -v project-knowledge >/dev/null 2>&1 || {
 }
 
 exec project-knowledge --project "${ROOT}" context "${1:-}"
-
