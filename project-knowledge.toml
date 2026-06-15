@@ -1,0 +1,10 @@
+schema_version = 1
+project_id = "movian-watch-history"
+title = "Movian Watch History"
+kind = "movian-plugin"
+visibility = "public-safe"
+repository = "Buksa/movian-watch-history"
+default_branch = "master"
+shared_knowledge = ["movian-public"]
+source_paths = ["AGENTS.md", "README.md", "plugin.json", "docs"]
+

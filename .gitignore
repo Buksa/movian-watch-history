@@ -65,6 +65,7 @@ docs/_build/
 # Local development
 local/
 dev/
+/.codex/
 
 # Movian plugin specific
 .settings/
