@@ -57,7 +57,7 @@ pendingDurationUrl = null;
                 parentUrl: currentSession.parentUrl,
                 source: 'global-observer'
             }, 0, newDuration);
-        
+        }
     } catch (e) {
         log.e('[global-observer] Error in duration callback: ' + e);
     }

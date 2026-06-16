@@ -13,10 +13,18 @@ The plugin runs on Movian's **Duktape engine**, which is strictly **ECMAScript 5
 ## 🛠 Build, Lint, and Test Commands
 
 ### Syntax & Linting
-Always run the syntax check before committing. It specifically flags ES6+ violations.
+Stage the intended changes, then run the ES5.1 compatibility check:
+
 ```bash
-./dev/syntax-check.sh
+./support/codex/check-es5.sh
 ```
+
+With no arguments the command validates JavaScript from the Git index. Pass
+explicit file paths to validate working-tree files during development.
+
+If optional local development helpers are installed, run
+`./dev/syntax-check.sh` as an additional check. Use the installed Movian plugin
+testing skill for runtime validation.
 
 ### Running the Plugin
 Launch Movian in debug mode with the current directory as the plugin path:
@@ -89,15 +97,31 @@ When creating new tests:
 3. Use console.log for test output
 4. Include timeout handlers to prevent hanging
 
-## 🤖 Advanced Testing (MAI)
+## 🤖 Advanced Testing
 
-For advanced automated testing with WebSocket STPP protocol, see the **Movian Agent Intelligence (MAI)** toolkit:
+Use the installed Movian plugin testing skill for HTTP prop inspection,
+screenshots, playback smoke, and repeatable runtime diagnostics. Keep external
+tool locations in user-local configuration rather than tracked documentation.
 
+## 🧠 Session Recovery
+
+At the start of a new session:
+
+```bash
+./support/codex/context.sh check
+project-knowledge status
 ```
-/home/dietpi/workspace/movian-agent-intelligence/
+
+After a Git state change or merge:
+
+```bash
+./support/codex/context.sh refresh
 ```
 
-MAI provides WebSocket-based prop monitoring, automated test runners, and mock VFS providers for advanced debugging.
+The refresh command updates ignored project state and creates a local knowledge
+commit. It does not push either repository. Use
+`project-knowledge backup sync` only after an explicit request to push the
+aggregate knowledge backup.
 
 ## 🏗 Architectural Patterns
 

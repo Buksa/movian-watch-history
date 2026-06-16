@@ -2,7 +2,7 @@
 
 [![Plugin Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/Buksa/movian-watch-history)
 [![Movian API](https://img.shields.io/badge/API-v2.0-green.svg)](https://movian.readthedocs.io/)
-[![License](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/license/mit)
 
 > **Global watch history tracking for all Movian video sources** - Universal playback position tracking with continue watching and favorites management.
 
@@ -333,7 +333,8 @@ Enable detailed logging:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is distributed under the
+[MIT License](https://opensource.org/license/mit).
 
 ## 🙏 Acknowledgments
 
