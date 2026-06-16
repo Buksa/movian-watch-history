@@ -1,6 +1,6 @@
 # 🎬 Movian Watch History Plugin
 
-[![Plugin Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/Buksa/movian-watch-history)
+[![Plugin Version](https://img.shields.io/badge/version-0.1.1-blue.svg)](https://github.com/Buksa/movian-watch-history)
 [![Movian API](https://img.shields.io/badge/API-v2.0-green.svg)](https://movian.readthedocs.io/)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/license/mit)
 
